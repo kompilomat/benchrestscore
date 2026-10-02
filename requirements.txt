@@ -1,0 +1,15 @@
+# Basis-Abhängigkeiten (CPU-tauglich, offizielle PyPI-Wheels).
+# cv2 kommt NICHT hierher, sondern aus dem System-Paket `python3-opencv`
+# (apt, mit GStreamer-Backend) — die PyPI-Wheels haben kein GStreamer.
+# Die venv muss mit `--system-site-packages` erstellt werden (siehe README).
+imgui-bundle==1.92.900
+glfw==2.10.2
+PyOpenGL==3.1.10
+pydantic==2.12.5
+numpy>=2.0
+scipy>=1.12
+httpx>=0.28
+# Nur nötig, weil `--system-site-packages` das System-Paket `python3-debian`
+# sichtbar macht, dessen `charset-normalizer`-Anforderung die Distro nicht
+# mitliefert (sonst `pip check`-Warnung). Kein direkter App-Bedarf.
+charset-normalizer>=3.0

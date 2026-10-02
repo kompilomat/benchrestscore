@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Benchrest Score
+GenericName=Benchrest Score
+# Pfad an den eigenen Checkout/Installationsort anpassen, z.B.:
+# Exec=/pfad/zu/benchrestscore/.venv/bin/python /pfad/zu/benchrestscore/benchrestscore/app.py
+Exec=benchrestscore
+Terminal=false
+Categories=Application;Webcam
+Keywords=webcam
